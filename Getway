@@ -1,0 +1,24 @@
+function GameData()
+  last = nil
+  Gmenu1, Gmenu2, Gmenu3 = 
+    gg.makeRequest("https://pastebin.com/raw/49jcgdUh").content,--
+    gg.makeRequest("https://pastebin.com/raw/FDAXXuAX").content,--
+    gg.makeRequest("https://pastebin.com/raw/DbxLgZAh").content--
+  for i = 1, 3 do _G["Gmenu"..i] = "gg.setVisible(true)\n".._G["Gmenu"..i].."\ngg.setVisible(true)" end
+end
+
+repeat
+  repeat until gg.isVisible()
+  gg.setVisible(false)
+  local UserInput = gg.choice({
+    "🟢 เชิฟแต่ง : คาปากกิ้ง iGodmod\n👌สำหรับทำสเต๊ป+เติมทองได้\n____________________________________",
+    "🟢 เชิฟแท้  : ️คาปากกิ้ง \n🔥อัฟเดตหมวดหมู่ใหม่\n____________________________________",
+    "😊😍🥰😛 : 😊😆😝😘\n",
+    "⚠ออกจากระบบ⚠"
+  },nil,"🚸iGodmod.Hacker!\nServer Online🟢\n📖เมนูหมวดหมู่เกมส์✍️️")
+  GameData()
+  if UserInput == 1 then load(Gmenu1)() end
+  if UserInput == 2 then load(Gmenu2)() end
+  if UserInput == 3 then load(Gmenu3)() end
+  if UserInput == 4 then break end
+until nil
