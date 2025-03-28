@@ -1,9 +1,9 @@
 function GameData()
   last = nil
   Gmenu1, Gmenu2, Gmenu3 = 
-    gg.makeRequest("https://pastebin.com/raw/49jcgdUh").content,--
     gg.makeRequest("https://raw.githubusercontent.com/iGodmod/ServerX/refs/heads/main/Server%20%E0%B9%81%E0%B8%97%E0%B9%89%20.lua").content,--
-    gg.makeRequest("https://raw.githubusercontent.com/iGodmod/ServerX/refs/heads/main/%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%9F%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%871.0.1.lua").content--
+    gg.makeRequest("https://raw.githubusercontent.com/iGodmod/ServerX/refs/heads/main/%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%9F%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%871.0.1.lua").content,--
+    gg.makeRequest("www.google.com").content--
   for i = 1, 3 do _G["Gmenu"..i] = "gg.setVisible(true)\n".._G["Gmenu"..i].."\ngg.setVisible(true)" end
 end
 
